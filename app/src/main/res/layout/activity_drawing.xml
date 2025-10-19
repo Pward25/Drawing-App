@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.drawing_app.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brush Size:"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="8dp" />
+        <SeekBar
+            android:id="@+id/brushSizeSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <ImageButton
+            android:id="@+id/btnColorBlack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Black" />
+        <ImageButton
+            android:id="@+id/btnColorRed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Red" />
+        <ImageButton
+            android:id="@+id/btnColorBlue"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Blue" />
+        <ImageButton
+            android:id="@+id/btnColorGreen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Green" />
+        <ImageButton
+            android:id="@+id/btnColorYellow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Yellow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Undo"
+            android:layout_marginEnd="4dp" />
+        <Button
+            android:id="@+id/btnRedo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Redo"
+            android:layout_marginEnd="4dp" />
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:layout_marginEnd="4dp" />
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:layout_marginEnd="4dp" />
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete" />
+    </LinearLayout>
+
+</LinearLayout>
